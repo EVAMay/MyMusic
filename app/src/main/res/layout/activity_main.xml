@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/layout_actionbar"
+        android:id="@+id/action_bar"/>
+    <LinearLayout
+        android:layout_below="@id/action_bar"
+        android:id="@+id/linera_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:background="@color/button_background"
+            android:id="@+id/button1_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="本地音乐"/>
+        <Button
+            android:background="@color/button_background"
+            android:id="@+id/button2_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="播放记录"/>
+        <Button
+            android:background="@color/button_background"
+            android:id="@+id/button3_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="我的收藏"/>
+
+    </LinearLayout>
+
+   <android.support.v4.view.ViewPager
+        android:layout_marginBottom="60dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/viewPager_main"
+       android:layout_below="@id/linera_main"
+      >
+
+   </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/music_main"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/music_item"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="140dp"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/music_name_main"
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="歌曲名"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/artist_main"
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="歌手名"
+                android:textSize="19sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="bottom">
+            <ImageButton
+                android:clickable="true"
+                android:onClick="onImageButton"
+                android:id="@+id/back_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/back"/>
+            <ImageButton
+                android:clickable="true"
+                android:onClick="onImageButton"
+                android:id="@+id/start_main"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/start"/>
+            <ImageButton
+                android:clickable="true"
+                android:onClick="onImageButton"
+                android:id="@+id/next_main"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/next"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/back_actionbar"
+    android:background="@color/write"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/btn_homeasup_default"
+    />
+    <View
+        android:layout_width="1px"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="我的音乐"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/write"/>
+    <View
+        android:layout_width="1px"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"/>
+    <ImageView
+        android:background="@color/write"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_child_configs"
+        />
+</LinearLayout>
